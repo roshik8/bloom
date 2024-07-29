@@ -16,7 +16,7 @@ public class SpotifyBloomFilter {
             }
         };
 
-        trackNameSet = BloomFilter.create(trackNameFunnel, 1000000, 0.2);
+        trackNameSet = BloomFilter.create(trackNameFunnel, 1000000, 0.02);
     }
 
     public void addTrackName(String trackName) {
